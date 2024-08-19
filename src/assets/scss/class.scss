@@ -1,0 +1,10 @@
+
+.click {
+	@media only screen and (any-hover: hover) {
+		&:hover {
+			cursor: pointer;
+			opacity: 0.7;
+		}
+	}
+	&:active { opacity: 0.4; }
+}
