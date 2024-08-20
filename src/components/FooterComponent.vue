@@ -10,16 +10,14 @@ export default {
 
 <style>
 .footer {
-	position: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	bottom: 0;
 
-
 	background-color: var(--back-normal);
-	min-width: 100vw;
-	max-width: 100vw;
+	min-width: 100%;
+	max-width: 100%;
 	height: 35px;
 }
 </style>
