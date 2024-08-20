@@ -13,15 +13,17 @@
 			</div>
 		</form>
 	</div>
+	<FooterComponent class="anim-slide-up"/>
 </template>
 
 <script>
 import InputComponent from '@/components/InputComponent.vue';
 import ButtonComponent from '@/components/ButtonComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
 
 export default {
 	name: 'LoginPage',
-	components: { InputComponent, ButtonComponent },
+	components: { InputComponent, ButtonComponent, FooterComponent },
 	data() {
 		return {
 			email: '',
