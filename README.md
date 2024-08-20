@@ -1,24 +1,7 @@
-# hangman-game-vue
+# Hangman Game Vue
 
-## Project setup
-```
-npm install
-```
+Um Web App de jogo da forca, onde cada usuário pode criar e compartilhar partidas
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 📋 Status
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Em construção...
