@@ -1,14 +1,8 @@
 <template>
 	<div class="menu-page">
 		<div class="menu-container">
-			<header class="anim-slide-down-delay">
-				<nav class="nav-container">
-					<a class="nav-logo">Hangman Game</a>
-					<a class="nav-profile">Conta</a>
-				</nav>
-			</header>
+			<HeaderComponent/>
 			<main>
-
 			</main>
 		</div>
 		<FooterComponent class="anim-slide-up-delay"/>
@@ -17,11 +11,12 @@
 
 <script>
 import FooterComponent from '@/components/FooterComponent.vue';
+import HeaderComponent from '@/components/HeaderComponent.vue';
 
 export default {
 	name: 'MenuPage',
 	components: {
-		FooterComponent
+		FooterComponent, HeaderComponent
 	}
 }
 </script>
@@ -39,29 +34,6 @@ export default {
 
 	.menu-container {
 		width: 100%;
-
-		header {
-			.nav-container {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 0px 50px;
-	
-				background-color: var(--back-normal);
-				width: 100%;
-				height: 60px;
-
-				.nav-logo {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-
-					height: 100%;
-
-					font-size: 2em;
-				}
-			}
-		}
 
 		main {
 
