@@ -20,6 +20,17 @@
 	&:active { opacity: 0.65; }
 }
 
+.click-hard {
+	transition: opacity .2s;
+	@media only screen and (any-hover: hover) {
+		&:hover {
+			cursor: pointer;
+			opacity: 0.5;
+		}
+	}
+	&:active { opacity: 0.2; }
+}
+
 .click-color {
 	transition: background-color .1s ease-in, border .6s ease-in-out;
 	@media only screen and (any-hover: hover) {
