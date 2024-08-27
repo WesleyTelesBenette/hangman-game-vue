@@ -17,11 +17,13 @@ export default {
 
 <style>
 .add-container {
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	user-select: none;
-	padding: 20px 15px;
 
 	width: 100%;
+	height: 100%;
 	border: 2px dashed var(--back-light);
 	border-radius: 8px;
 
