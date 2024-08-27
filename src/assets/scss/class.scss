@@ -20,12 +20,46 @@
 	&:active { opacity: 0.65; }
 }
 
+.click-color {
+	transition: background-color .1s ease-in, border .6s ease-in-out;
+	@media only screen and (any-hover: hover) {
+		&:hover {
+			cursor: pointer;
+			background-color: transparent;
+		}
+	}
+	&:active {
+		opacity: .8;
+		background-color:var(--back-marked);
+		border-color: var(--border-marked);
+	}
+}
+
+.click-color-noback {
+	transition: background-color .1s ease-in, border .4s ease-in-out;
+	@media only screen and (any-hover: hover) {
+		&:hover {
+			cursor: pointer;
+			border-color: var(--border-marked);
+		}
+	}
+	&:active {
+		opacity: .8;
+		background-color:var(--back-marked);
+		border-color: var(--border-marked);
+		border-style: solid;
+	}
+}
+
 @keyframes size-pop {
 	0% { transform: scale(0); }
 	100% { transform: scale(1); }
 }
 .anim-size-pop {
-	animation: size-pop .5s ease-in-out;
+	animation: .5s ease-in-out both size-pop;
+}
+.anim-size-pop-delay {
+	animation: .3s ease-in-out .7s both size-pop;
 }
 
 @keyframes slide-left {
@@ -33,7 +67,21 @@
 	100% { transform: translateX(0px); opacity: 1; }
 }
 .anim-slide-left {
-	animation: slide-left .5s ease-in-out;
+	animation: .5s ease-in-out both slide-left;
+}
+.anim-slide-left-delay {
+	animation: .5s ease-in-out .7s both slide-left;
+}
+
+@keyframes slide-down {
+	0% { transform: translateY(-250px); opacity: 0; }
+	100% { transform: translateY(0px); opacity: 1; }
+}
+.anim-slide-down {
+	animation: .5s ease-in-out both slide-down;
+}
+.anim-slide-down-delay {
+	animation: .5s ease-in-out .7s both slide-down;
 }
 
 @keyframes slide-up {
@@ -41,6 +89,9 @@
 	100% { transform: translateY(0px); opacity: 1; }
 }
 .anim-slide-up {
-	animation: slide-up .5s ease-in-out;
+	animation: .5s ease-in-out both slide-up;
+}
+.anim-slide-up-delay {
+	animation: .5s ease-in-out .7s both slide-up;
 }
 
